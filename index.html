@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>♥ HBD Faii ♥</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- BG Music -->
+    <audio id="bg-music" src="vdo/bgmusic.mp3" loop preload="auto" autoplay></audio>
+    <button id="music-toggle" aria-label="Music Toggle" style="position:fixed;right:16px;top:16px;width:44px;height:44px;border-radius:50%;border:2px solid #D81B60;background:#fff;color:#D81B60;box-shadow:0 6px 14px rgba(0,0,0,0.1);cursor:pointer;z-index:9999;">♪</button>
+    <button id="music-vol-btn" aria-label="Music Volume" style="position:fixed;right:68px;top:16px;width:44px;height:44px;border-radius:50%;border:2px solid #D81B60;background:#fff;color:#D81B60;box-shadow:0 6px 14px rgba(0,0,0,0.1);cursor:pointer;z-index:9999;">🔊</button>
+    <div id="music-panel" style="display:none;position:fixed;right:16px;top:68px;background:#fff;border:2px solid #D81B60;border-radius:12px;padding:10px 12px;box-shadow:0 10px 20px rgba(0,0,0,0.12);z-index:9999;">
+        <label for="music-volume" style="display:block;font-size:12px;color:#5E2154;margin-bottom:6px;">Volume</label>
+        <input id="music-volume" type="range" min="0" max="100" value="60" style="width:160px;">
+    </div>
+
+    <!-- หน้าแรก -->
+    <section id="start-page" class="page active">
+        <div class="sticker sticker1">🎉</div>
+        <div class="sticker sticker2">💖</div>
+        <div class="sticker sticker3">🎂</div>
+        <div class="sticker sticker4">✨</div>
+        <div id="start-sparkles" class="sparkles" aria-hidden="true"></div>
+        <div class="content">
+            <h1 class="title">สุขสันต์วันเกิดน้องฝ้าย</h1>
+            <p class="subtitle-main">Happy Birthday T'rak</p>
+            <button id="gallery-button" class="cute-button">Look how cute she is!</button>
+        </div>
+        <div class="signature">จากพี่ภูผา</div>
+    </section>
+
+    <!-- หน้าแกลเลอรี -->
+    <section id="gallery-page" class="page">
+        <button id="back-button" class="back-button">&larr; กลับหน้าแรก</button>
+        <div id="gallery-sparkles" class="sparkles" aria-hidden="true"></div>
+        <div class="gallery-container">
+            <h2>♥ Cutie Gallery ♥</h2>
+            <p class="subtitle">(มีความสุขเยอะๆนะหมูเด้ง <3)</p>
+            <div id="image-grid" class="grid">
+                <!-- รูปภาพจะถูกเพิ่มที่นี่โดย JavaScript -->
+            </div>
+
+            <h2>♥ Special Videos ♥</h2>
+            <p class="subtitle">(ปัดซ้าย/ขวาเพื่อเลื่อน หรือใช้ปุ่ม ⟨ ⟩)</p>
+            <div id="video-carousel" class="video-carousel">
+                <button id="video-prev" class="carousel-nav left" aria-label="Previous">&#8249;</button>
+                <div id="video-track" class="video-track">
+                    <!-- วิดีโอจะถูกเพิ่มที่นี่โดย JavaScript -->
+                </div>
+                <button id="video-next" class="carousel-nav right" aria-label="Next">&#8250;</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
