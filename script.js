@@ -188,7 +188,12 @@ document.addEventListener('DOMContentLoaded', function() {
             "IMG_2203.jpg",
             "IMG_2231.jpg",
             "IMG_9070.jpg",
-            "IMG_9716.PNG"
+            "IMG_2092.jpg",
+            "IMG_8495.jpg",
+            "IMG_0129.jpg",
+            "307F1523-3899-4784-B063-D9D5AB0B544A.JPG",
+            "IMG_1895.jpg",
+            "IMG_1905.jpg"
         ];
         loadedImages = imageFiles.map(f => `pic/${f}`);
         loadedImages.forEach((src, i) => {
@@ -308,7 +313,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // --- Videos ---
     const videoFiles = [
-        'IMG_1565.MOV','IMG_1794.MOV','IMG_2212.MOV','IMG_2226.MOV'
+        'IMG_1565.MOV','IMG_1794.MOV','IMG_2226.MOV'
     ];
     function populateVideos() {
         if (!videoTrack) return;
