@@ -518,7 +518,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     if (volRange && bg) {
         volRange.addEventListener('input', () => {
-            const v = Math.max(0, Math.min(100, parseInt(volRange.value || '60', 10)));
+            const v = Math.max(0, Math.min(100, parseInt(volRange.value || '40', 10)));
             const vol = v / 100;
             bg.volume = vol;
             localStorage.setItem('musicVolume', String(vol));
